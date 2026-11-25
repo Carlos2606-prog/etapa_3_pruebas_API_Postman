@@ -1,0 +1,55 @@
+{
+  "info": {
+    "_postman_id": "037f5b52-69bc-4ec8-88e4-7ef65a6633d7",
+    "name": "Static_Images_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/-73.3635,5.5366,17,0/300x200.png",
+      "_postman_id": "e9243a1b-7a70-4992-9341-98bc89501d5c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/-73.3635,5.5366,17,0/300x200.png?attribution=true&logo=true&access_token={{mapbox_api_token_1cj1}}",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "styles",
+            "v1",
+            "mapbox",
+            "outdoors-v12",
+            "static",
+            "-73.3635,5.5366,17,0",
+            "300x200.png"
+          ],
+          "query": [
+            {
+              "key": "attribution",
+              "value": "true",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "logo",
+              "value": "true",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}

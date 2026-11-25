@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{baseUrl_httpbin}}/anything"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"integrante\": \"Carlos\",\r
+
+    \  \"etapa\": \"API\",\r
+
+    \  \"activo\": true\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status es 200\", () => {\r
+
+      \  pm.response.to.have.status(200);\r
+
+      });\r
+
+      pm.test(\"Devuelve el JSON enviado\", () => {\r
+
+      \  const body = pm.response.json();\r
+
+      \  pm.expect(body.json.integrante).to.eql(\"Carlos\");\r
+
+      \  pm.expect(body.json.etapa).to.eql(\"API\");\r
+
+      });"
+    language: text/javascript
+order: 4000

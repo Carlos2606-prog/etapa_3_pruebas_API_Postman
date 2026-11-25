@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{baseUrl_httpbin}}/basic-auth/qa/uptc"
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: qa
+    password: uptc
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status es 200 con credenciales válidas\", () => {\r
+
+      \  pm.response.to.have.status(200);\r
+
+      });\r
+
+      pm.test(\"Usuario autenticado\", () => {\r
+
+      \  const data = pm.response.json();\r
+
+      \  pm.expect(data.authenticated).to.eql(true);\r
+
+      \  pm.expect(data.user).to.eql(\"qa\");\r
+
+      });"
+    language: text/javascript
+order: 3000

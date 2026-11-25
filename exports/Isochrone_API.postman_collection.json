@@ -1,0 +1,65 @@
+{
+  "info": {
+    "_postman_id": "a620bf66-021e-4f95-8e3e-6f1be8c08760",
+    "name": "Isochrone_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/isochrone/v1/mapbox/driving-traffic/-73.361890,5.533118",
+      "_postman_id": "a2232bc0-d15d-40ea-819e-a0caca8754cd",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/isochrone/v1/mapbox/driving-traffic/-73.361890,5.533118?contours_minutes=10&contours_colors=2723fb&polygons=true&denoise=1&access_token={{mapbox_api_token_1cj1}}",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "isochrone",
+            "v1",
+            "mapbox",
+            "driving-traffic",
+            "-73.361890,5.533118"
+          ],
+          "query": [
+            {
+              "key": "contours_minutes",
+              "value": "10",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "contours_colors",
+              "value": "2723fb",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "polygons",
+              "value": "true",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "denoise",
+              "value": "1",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}

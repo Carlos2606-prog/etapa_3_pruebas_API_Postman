@@ -1,0 +1,14 @@
+name: Reto QA Env
+values:
+  - key: baseUrl_restful
+    value: ''
+  - key: baseUrl_faker
+    value: ''
+  - key: baseUrl_jsonph
+    value: ''
+  - key: baseUrl_meteo
+    value: ''
+  - key: baseUrl_httpbin
+    value: ''
+  - key: baseUrl_practice
+    value: ''

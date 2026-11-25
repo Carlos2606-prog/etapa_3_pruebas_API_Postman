@@ -1,0 +1,46 @@
+{
+  "info": {
+    "_postman_id": "e8ed8943-dfbc-446e-ae68-935e91c01a70",
+    "name": "Search_Box_API_Forward_And_Reverse",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/search/searchbox/v1/forward",
+      "_postman_id": "f7bde97b-0f03-4c92-9c7d-00ca0224dce7",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/search/searchbox/v1/forward?q=tunja++exito&access_token={{mapbox_api_token_1cj1}}",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "search",
+            "searchbox",
+            "v1",
+            "forward"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "tunja++exito",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}

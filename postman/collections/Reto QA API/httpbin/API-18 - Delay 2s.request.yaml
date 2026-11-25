@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl_httpbin}}/delay/2"
+method: GET
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status es 200\", () => {\r
+
+      \  pm.response.to.have.status(200);\r
+
+      });\r
+
+      pm.test(\"Tiempo de respuesta >= 2000 ms\", () => {\r
+
+      \  pm.expect(pm.response.responseTime).to.be.at.least(2000);\r
+
+      });"
+    language: text/javascript
+order: 2000

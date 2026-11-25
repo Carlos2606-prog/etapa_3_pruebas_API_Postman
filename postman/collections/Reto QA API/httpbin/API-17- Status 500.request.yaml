@@ -1,0 +1,19 @@
+$kind: http-request
+name: "API-17: Status 500"
+url: "{{baseUrl_httpbin}}/status/500"
+method: GET
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status es 500\", () => {\r
+
+      \  pm.response.to.have.status(500);\r
+
+      });\r
+
+      pm.test(\"Responde en menos de 1 s\", () => {\r
+
+      \  pm.expect(pm.response.responseTime).to.be.below(1000);\r
+
+      });"
+    language: text/javascript
+order: 1000

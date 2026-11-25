@@ -1,0 +1,47 @@
+{
+  "info": {
+    "_postman_id": "b589892c-7641-446f-a457-46d6e94119f0",
+    "name": "Map_Matching_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/matching/v5/mapbox/driving/-73.356313,5.546293;-73.351869,5.551301;-73.350691,5.549875",
+      "_postman_id": "302f55c3-4cc6-4e73-87c7-769850552a8f",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/matching/v5/mapbox/driving/-73.356313,5.546293;-73.351869,5.551301;-73.350691,5.549875?q=tunja++exito&access_token={{mapbox_api_token_1cj1}}",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "matching",
+            "v5",
+            "mapbox",
+            "driving",
+            "-73.356313,5.546293;-73.351869,5.551301;-73.350691,5.549875"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "tunja++exito",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}

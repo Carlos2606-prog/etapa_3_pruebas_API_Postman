@@ -1,0 +1,77 @@
+{
+  "info": {
+    "_postman_id": "3BA35068f2F1FFAE0aEa3BD7",
+    "name": "Directions_API_Playground",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/directions/v5/mapbox/walking/-73.36189%2C5.533118%3B-73.357405%2C5.55228",
+      "_postman_id": "76e6e63e-6640-4c06-828e-1d6483a1efb9",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/directions/v5/mapbox/walking/-73.36189%2C5.533118%3B-73.357405%2C5.55228?alternatives=true&continue_straight=true&geometries=geojson&language=en&overview=full&steps=true&access_token={{mapbox_api_token_1cj1}}",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "directions",
+            "v5",
+            "mapbox",
+            "walking",
+            "-73.36189%2C5.533118%3B-73.357405%2C5.55228"
+          ],
+          "query": [
+            {
+              "key": "alternatives",
+              "value": "true",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "continue_straight",
+              "value": "true",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "geometries",
+              "value": "geojson",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "language",
+              "value": "en",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "overview",
+              "value": "full",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "steps",
+              "value": "true",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}

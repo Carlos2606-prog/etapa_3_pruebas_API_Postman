@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{baseUrl_practice}}/users/login"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"email\": \"customer@practicesoftwaretesting.com\",\r
+
+    \  \"password\": \"welcome01\"\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status es 200\", () => {\r
+
+      \  pm.response.to.have.status(200);\r
+
+      });\r
+
+      pm.test(\"Guarda access_token en variable de colección\", () => {\r
+
+      \  const body = pm.response.json();\r
+
+      \  pm.expect(body).to.have.property(\"access_token\");\r
+
+      \  pm.collectionVariables.set(\"token\", body.access_token);\r
+
+      });"
+    language: text/javascript
+order: 1000

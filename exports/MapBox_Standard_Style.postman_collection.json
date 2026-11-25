@@ -1,0 +1,40 @@
+{
+  "info": {
+    "_postman_id": "f51eff61-9d89-47d3-91bd-7f271155c8c1",
+    "name": "MapBox_Standard_Style",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/styles/v1/mapbox/standard",
+      "_postman_id": "1427e7f4-fecc-487d-877f-588cb6dc0aaa",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/styles/v1/mapbox/standard?access_token={{mapbox_api_token_1cj1}}",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "styles",
+            "v1",
+            "mapbox",
+            "standard"
+          ],
+          "query": [
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}

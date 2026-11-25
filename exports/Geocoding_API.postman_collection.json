@@ -1,0 +1,58 @@
+{
+  "info": {
+    "_postman_id": "c3339753-a766-4aaa-ba22-bf579986a4c1",
+    "name": "Geocoding_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/search/geocode/v6/forward",
+      "_postman_id": "3cfacd10-3b5e-463d-885e-560504a1587d",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/search/geocode/v6/forward?access_token={{mapbox_api_token_1cj1}}&place=Tunja&country=Colombia&postcode=150002",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "search",
+            "geocode",
+            "v6",
+            "forward"
+          ],
+          "query": [
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "place",
+              "value": "Tunja",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "country",
+              "value": "Colombia",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "postcode",
+              "value": "150002",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}

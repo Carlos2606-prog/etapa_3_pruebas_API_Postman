@@ -1,0 +1,47 @@
+{
+  "info": {
+    "_postman_id": "8fd75be6-d417-48bd-86df-a1a532b83fe1",
+    "name": "Search_Box_API_Suggest_And_Retrieve",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.mapbox.com/search/searchbox/v1/retrieve/dXJuOm1ieHBvaToxYzE3MTM3OS03ZTNmLTRkNzgtOTU0MS0yNGNmOTljMDY3MTI",
+      "_postman_id": "7d3b3cbb-6d43-4ccd-a1f7-7fe10c79e4a6",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.mapbox.com/search/searchbox/v1/retrieve/dXJuOm1ieHBvaToxYzE3MTM3OS03ZTNmLTRkNzgtOTU0MS0yNGNmOTljMDY3MTI?access_token={{mapbox_api_token_1cj1}}&session_token=sesion-tunja-01",
+          "host": [
+            "api.mapbox.com"
+          ],
+          "path": [
+            "search",
+            "searchbox",
+            "v1",
+            "retrieve",
+            "dXJuOm1ieHBvaToxYzE3MTM3OS03ZTNmLTRkNzgtOTU0MS0yNGNmOTljMDY3MTI"
+          ],
+          "query": [
+            {
+              "key": "access_token",
+              "value": "{{mapbox_api_token_1cj1}}",
+              "disabled": false,
+              "description": ""
+            },
+            {
+              "key": "session_token",
+              "value": "sesion-tunja-01",
+              "disabled": false,
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}
